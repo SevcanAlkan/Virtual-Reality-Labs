@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: AajJxw3/////AAABmd9dI2suSEPekF7ITU8Pd+BoxvyfWxuZL58YCqGwjh7bLZJT0VZjHc2hv79P5atrHfqqZz9+u2X1Fk8Tn11+nk8lev5euxUq4NyljyvERN22X+z8TYWm5D4zxg0e+Y6UX3mIxfMnZSagmAfV+8FzZMGJbJW93V3e3/8wa9n645iX130SdMIxPNKZ23LTIhyywDEVdYzclke/L7h69ze7eWRO/c3V886Xl/ugtHO8WHjk8H+okFoHo27WmWNJcKMMSjzTvhBj7Bf2asOtymnMvSmjvpTMiWjAa6ppwJUxIRDHaHUQTdSHXjqTHbS85BiH2uhB3Yvz5ctuc+ReGQcIMUFPpd5IVY3wtr0F/BoiPwSW
+    ufoLicenseKey: QVhtSG0rZi8vLy8vQUFBQUtMWHQyMnpXaTBJS252Zm15bXdRc2ZZUUFJdklIVnRhUk1taU5hdU5mWlVoRzY2bzdZbnN2b3VZVnFFaWt2R0oxL0MvZVVoUjFjNHpYTUEyLzdKSGR0alY5QURqL2tXNWJBQitCWVhOWFdHOXE4TmMwREhCOGlCVlhyRXhIWWVJdVArZ0YreUlidWRrYWJBb21oM0pyNUw0TkQ0Y0ZKc3RSRlVPNE5KbCtOWjRjZGMrSW1RQmU1WHFxdUtFcExKSndDY0w1NmkzS01IaW1HMHhPUDQxWXhYYnh1MEJtaGhiMkM1MlRBSmF5SzJIRXZDQnFNZEpXNFBmM0VESFdnb2dXSUxVZkdKc0RDMHhmQi84MEFTUUxCaG9ONFBkeWdtdDUxTTBOMVBLWFEybTgxbFk3RVZjWjlEOTNIY3hXZUM0VkoyK2ZNamxoVzN4VEQ2Vkx5cithaHBOYmFlRTQ4RmVTVTNUdENLV2k4ak4=
+    delayedInitialization: 0
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    useDelayedLoadingObjectTargets: 0
+    modelTargetRecoWhileExtendedTracked: 1
+    version: 8.5.9
+    eulaAcceptedVersions: '{"Values":["8.1","8.5"]}'
+  database:
+    disableModelExtraction: 0
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoInitTracker: 0
+    autoStartTracker: 0
+    arcoreRequirement: 0
+    autoImportArcore: 0
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
+  webcam:
+    deviceNameSetInEditor: Logitech HD Webcam C270
+    turnOffWebCam: 0
+    renderTextureLayer: 30
