@@ -1,18 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
-public class TrackingEventHandler : MonoBehaviour
+public class TrackingEventHandler : DefaultTrackableEventHandler
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnityEvent OnOpenFound;
+    public UnityEvent OnCloseFound;
+    
+    //private GameObject Ship = GameObject.Find("ImageTargetPlatform/Transport Shuttle_fbx");
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnTrackingFound()
     {
+        base.OnTrackingFound();
+
+        Debug.LogWarning(mTrackableBehaviour.name);
         
+        if (mTrackableBehaviour.name == "ImageTargetOpen")
+        {
+            OnOpenFound?.Invoke();
+        } else if (mTrackableBehaviour.name == "ImageTargetClose")
+        {
+            OnCloseFound?.Invoke();
+        }
     }
 }

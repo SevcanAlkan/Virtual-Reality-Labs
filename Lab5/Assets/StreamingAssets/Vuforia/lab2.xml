@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="robin" size="0.200000 0.243478" />
+    <ImageTarget name="cannon" size="0.200000 0.112527" />
+    <ImageTarget name="LandingPlatformClose" size="0.100000 0.049805" />
+    <ImageTarget name="LandingPlatformOpen" size="0.100000 0.049805" />
+    <ImageTarget name="LandingPlatform" size="0.200000 0.200000" />
+  </Tracking>
+</QCARConfig>
