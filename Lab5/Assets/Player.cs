@@ -22,9 +22,14 @@ public class Player : MonoBehaviour
     
     public void Shoot()
     {
-        GameObject bullet = Instantiate(BulletPrefab, transform);
-        Ray r = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
-        bullet.GetComponent<Rigidbody>().AddForce(r.direction * ShootForce, ForceMode.Impulse);
+        GameObject bullet = Instantiate(BulletPrefab);
+        bullet.transform.position = transform.position;
+        bullet.transform.LookAt(transform.position + transform.forward * 0.01f);
+        Rigidbody rb = bullet.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * ShootForce, ForceMode.Impulse);
+        
+        // Ray r = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+        // bullet.GetComponent<Rigidbody>().AddForce(r.direction * ShootForce, ForceMode.Impulse);
     }
     
     private void OnCollisionEnter(Collision collision)
