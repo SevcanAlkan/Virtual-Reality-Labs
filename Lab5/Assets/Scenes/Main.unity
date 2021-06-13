@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 303103732}
   - component: {fileID: 303103737}
   - component: {fileID: 303103738}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ARCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -815,7 +815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 159.61, y: 73.7}
+  m_AnchoredPosition: {x: 159.5, y: 73.75}
   m_SizeDelta: {x: 286.6038, y: 53.39483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704245484
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 2
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
